@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="decbf20b-5e65-407c-9be1-02528c72f40e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Cmdline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/CmdLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Format.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Method.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Win.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Win.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Win.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Win.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmdline/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Format.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmdline/Win.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Win.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cmdline/Win.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmdline/Win.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Win.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Win.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cmdline/Win.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="527">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -31,8 +28,12 @@
       <file leaf-file-name="Format.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmdline/Format.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#82#83#0" expanded="true" />
+                <element signature="e#106#107#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Method.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Method.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmdline/Method.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -58,7 +59,7 @@
       <file leaf-file-name="CmdLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cmdline/CmdLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="956">
+            <state relative-caret-position="1037">
               <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
@@ -74,8 +75,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/cmdline/Cmdline.java" />
         <option value="$PROJECT_DIR$/src/Win.java" />
-        <option value="$PROJECT_DIR$/src/cmdline/Win.java" />
         <option value="$PROJECT_DIR$/src/cmdline/CmdLine.java" />
+        <option value="$PROJECT_DIR$/src/cmdline/Format.java" />
+        <option value="$PROJECT_DIR$/src/cmdline/Win.java" />
+        <option value="$PROJECT_DIR$/src/cmdline/Win.form" />
       </list>
     </option>
   </component>
@@ -228,24 +231,28 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cmdline/Win.java">
+    <entry file="file://$PROJECT_DIR$/src/cmdline/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cmdline/CmdLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="956">
+        <state relative-caret-position="1037">
           <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cmdline/Format.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#82#83#0" expanded="true" />
+            <element signature="e#106#107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -256,10 +263,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmdline/Method.java">
+    <entry file="file://$PROJECT_DIR$/src/cmdline/Win.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmdline/Win.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="527">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
