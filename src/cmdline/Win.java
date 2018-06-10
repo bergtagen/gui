@@ -34,19 +34,17 @@ public class Win {
     private JCheckBox storeSymlinksCheckBox;
     private JCheckBox storeHardlinksCheckBox;
     private final CmdLine cmdline = new CmdLine();
-    private StringBuilder z7name = new StringBuilder();
 
 
     Win() {
 
-        z7name.append(Format.z7.name()).reverse();
         frame.setResizable(false);
 
         cmdline.setThreadNum(Runtime.getRuntime().availableProcessors());
         maxThreadsField.setHorizontalAlignment(4);
         maxThreadsField.setText(" / " + cmdline.getThreadNum());
 
-        formatBox.addItem(z7name.toString());
+        formatBox.addItem(Format.z7.z7name());
         formatBox.addItem(Format.zip.name());
         formatBox.addItem(Format.tar.name());
 
@@ -65,7 +63,7 @@ public class Win {
 
 
         formatBox.addActionListener(actionEvent -> {
-            if (Objects.equals(formatBox.getSelectedItem(), z7name.toString())
+            if (Objects.equals(formatBox.getSelectedItem(), Format.z7.z7name())
                     || (Objects.equals(formatBox.getSelectedItem(), Format.zip.name())))
                 formatBoxInit(Objects.requireNonNull(formatBox.getSelectedItem()).toString(),
                         Level.normal.name(), cmdline.getThreadNum());
@@ -103,7 +101,7 @@ public class Win {
 
         // for 7z:lzma 2 threads, for any other threads = cpu cores
         methodBox.addActionListener(actionEvent -> {
-            if (Objects.equals(formatBox.getSelectedItem(), z7name.toString())
+            if (Objects.equals(formatBox.getSelectedItem(), Format.z7.z7name())
                     && methodBox.getSelectedIndex() == 1) {   // LZMA. don't touch
                 setThreadsBox(false);
 //                setMemoryFields(z7name.toString(), Level.normal.name(), Method.LZMA.name(), 2);
@@ -192,8 +190,8 @@ public class Win {
                 command.append("u").append(" ");
 
         command.append("-t");
-        if (formatBox.getSelectedItem().toString().equals(z7name.toString()))
-            command.append(z7name.toString()).append(" ");
+        if (formatBox.getSelectedItem().toString().equals(Format.z7.z7name()))
+            command.append(Format.z7.z7name()).append(" ");
         else
             command.append(formatBox.getSelectedItem().toString()).append(" ");
 
@@ -207,7 +205,7 @@ public class Win {
                 command.append("7").append(" ");
         }
 
-        if (formatBox.getSelectedItem().toString().equals(z7name.toString()))
+        if (formatBox.getSelectedItem().toString().equals(Format.z7.z7name()))
             command.append("-m0=").append(methodBox.getSelectedItem().toString()).append(" ");
         if (formatBox.getSelectedItem().toString().equals(Format.zip.name()))
             command.append("-mm=").append(methodBox.getSelectedItem().toString()).append(" ");
@@ -215,7 +213,7 @@ public class Win {
             command.append("-mmt=").append(threadsBox.getSelectedItem().toString()).append(" ");
 
 //        sfx
-        if (compressSharedFilesCheckBox.isSelected() && formatBox.getSelectedItem().toString().equals(z7name.toString()))
+        if (compressSharedFilesCheckBox.isSelected() && formatBox.getSelectedItem().toString().equals(Format.z7.z7name()))
             command.append("-ssw").append(" ");
         if (!Objects.requireNonNull(volumeBox.getSelectedItem()).toString().equals("")) {
             command.append("-v").append(cmdline.getVolumeSize().toLowerCase()).append(" ");
@@ -225,9 +223,9 @@ public class Win {
             command.append(optionsField.getText()).append(" ");
 
         if (!cmdline.getName().isEmpty()) {
-            if (formatBox.getSelectedItem().toString().equals(z7name.toString()))
+            if (formatBox.getSelectedItem().toString().equals(Format.z7.z7name()))
                 command.append(cmdline.getName().split("\\.")[0])
-                        .append(".").append(z7name.toString()).append(" ");
+                        .append(".").append(Format.z7.z7name()).append(" ");
             else
                 command.append(cmdline.getName().split("\\.")[0])
                         .append(".").append(formatBox.getSelectedItem().toString()).append(" ");
@@ -246,7 +244,7 @@ public class Win {
         methodBox.setEnabled(true);
         methodBox.removeAllItems();
         volumeBox.setEnabled(true);
-        if (format.equals(z7name.toString())) {
+        if (format.equals(Format.z7.z7name())) {
             passwordField.setEnabled(true);
             passwordField.setEditable(true);
             encryptCheckBox.setEnabled(true);
@@ -353,7 +351,7 @@ public class Win {
     private void setEncryptBox() {
         encryptBox.setEnabled(true);
         encryptBox.removeAllItems();
-        if (Objects.requireNonNull(formatBox.getSelectedItem()).toString().equals(z7name.toString()))
+        if (Objects.requireNonNull(formatBox.getSelectedItem()).toString().equals(Format.z7.z7name()))
             encryptBox.addItem("AES-256");
         if (formatBox.getSelectedItem().toString().equals(Format.zip.name())) {
             encryptBox.addItem("ZipCrypto");

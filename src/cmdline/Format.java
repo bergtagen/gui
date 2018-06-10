@@ -8,5 +8,5 @@ enum Format {
     protected String z7name() {
         return "7z";
     }
-    
+
 }
