@@ -1,4 +1,4 @@
-package CmdLine;
+package cmdline;
 
 enum Method {
     Deflate,

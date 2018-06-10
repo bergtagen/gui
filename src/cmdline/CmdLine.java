@@ -1,8 +1,8 @@
-package CmdLine;
+package cmdline;
 
 import java.util.HashMap;
 
-public class Cmdline {
+public class CmdLine {
 
     private String name = "";
     private int threadNum;
@@ -67,7 +67,7 @@ public class Cmdline {
         this.threadNum = threadNum;
     }
 
-    Cmdline() {
+    CmdLine() {
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package CmdLine;
+package cmdline;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,7 +33,7 @@ public class Win {
     private JTextField maxThreadsField;
     private JCheckBox storeSymlinksCheckBox;
     private JCheckBox storeHardlinksCheckBox;
-    private final Cmdline cmdline = new Cmdline();
+    private final CmdLine cmdline = new CmdLine();
     private StringBuilder z7name = new StringBuilder();
 
 
